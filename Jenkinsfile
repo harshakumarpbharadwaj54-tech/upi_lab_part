@@ -5,7 +5,7 @@ pipeline {
         stage('Run transfer validation tests') {
             steps {
                 bat 'if not exist reports mkdir reports'
-                bat 'py -m pytest -v --junitxml=reports\\pytest-results.xml'
+                bat '"C:\\Users\\HP\\AppData\\Local\\Python\\pythoncore-3.15-64\\python.exe" -m pytest -v --junitxml=reports\\pytest-results.xml'
             }
         }
     }
